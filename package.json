@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node scripts/sync-central.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/sync-central.mjs",
     "build": "vite build && node scripts/write-vercel-output.mjs",
     "preview": "vite preview",
     "test": "node --test server/*.test.js"

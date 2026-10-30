@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
-import WebApp from '../../web/src/App.jsx'
-import '../../web/src/styles.css'
+import WebApp from '../central/App.jsx'
+import '../central/styles.css'
 
 export function SiteShell({ agentId, onLeave, onSignOut }) {
   useEffect(() => {
